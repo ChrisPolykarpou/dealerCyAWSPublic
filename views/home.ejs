@@ -1,0 +1,89 @@
+<html>
+    <head>
+      <meta property="og:title" content="DealerCy">
+      <meta property="og:image" content="https://dealercy-images.s3.eu-south-1.amazonaws.com/assets/logo.png">
+      <meta property="og:type" content="price search engine">
+      <meta property="og:description" content="Compare prices from various shops in Cyprus to find the best deal."/>
+      <meta property="og:url" content="https://www.dealercy.com">
+      <meta name="twitter:card" content="summary_large_image">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW2Z9YF01P"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BW2Z9YF01P');
+      </script>
+      <link rel="icon" href="https://dealercy-images.s3.eu-south-1.amazonaws.com/assets/logo.png">
+      <title>Dealer Cy: Find prices and mobile-plans for Smartphones in Cyprus</title>
+      <style ></style>
+      <meta charset="utf-8">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+      <link href="./css/home.css" rel="stylesheet" type="text/css">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo left"><img class="brand-logo homeBtnHome" src="https://dealercy-images.s3.eu-south-1.amazonaws.com/assets/logo.png" alt="dealer.com.cy"><p class="logoDealer">DealerCy</p></a>
+          <ul id="nav-mobile" class="right">
+            <li><a id="login-btn" class="black-text">Sign in</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row search-wrapper">
+        <div class="col s7 searchBox hide-on-med-and-down">
+          <div class="innerSearchBox">
+            <span class="searchTitle">
+              Compare smartphone prices all over Cyprus
+            </span>
+            <div class="nav-wrapper">
+              <div class="input-field homeBar">
+                <input class="autocomplete" type="search" id="autocomplete-input" required>
+                <label class="label-icon" for="search"><i id="search-btn" class="material-icons">search</i></label>
+                <i id="clear-btn" class="material-icons">close</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s5 hide-on-med-and-down">
+           
+        </div>
+        <div class="col s12 searchBox hide-on-large-only">
+          <div class="innerSearchBox">
+            <div class="mobSearch">
+              <span class="searchTitle">
+                Compare smartphone<br>
+                prices all over<br>
+                Cyprus
+              </span>
+            </div>
+            <div class="nav-wrapper homeNav">
+              <div class="input-field homeBar">
+                <input class="autocomplete" type="search" id="autocomplete-input-mob" required>
+                <label class="label-icon" for="search"><i id="search-btn-mob" class="material-icons">search</i></label>
+                <i id="clear-btn-mob" class="material-icons">close</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s5">
+          
+        </div>
+      </div>  
+    </body>
+</html>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script>
+  var names = "<%= JSON.stringify(names) %>"
+  var img = "<%= JSON.stringify(img) %>"
+</script>
+<script src="./scripts/home.js"></script>

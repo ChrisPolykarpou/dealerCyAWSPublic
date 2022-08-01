@@ -1,0 +1,272 @@
+
+nav{
+    display: none;
+}
+.loader {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+.dataBox{
+  position:relative;
+  width: 165px;
+  height: 165px;
+  overflow:hidden;
+  background: #f4f4f4;
+  clip-path: polygon(
+    0 10%,
+    10% 0,
+    90% 0,
+    100% 10%,
+    100% 90%,
+    90% 100%,
+    10% 100%,
+    0% 90%,
+    0% 10%
+  )
+}
+.boxMob{
+    width: 230px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.dataBoxMob{
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 2px;
+    width: 105px;
+    height: 105px;
+    overflow:hidden;
+    background: #f4f4f4;
+    clip-path: polygon(
+      0 10%,
+      10% 0,
+      90% 0,
+      100% 10%,
+      100% 90%,
+      90% 100%,
+      10% 100%,
+      0% 90%,
+      0% 10%
+    )
+  }
+.dataTitle{
+    text-align: center;
+    padding: 2px;
+    vertical-align: middle;
+    line-height: 140px;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    margin: auto;
+    font-size: 16px;
+}
+.dataTitleMob{
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    line-height: 90px;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    margin: auto;
+    font-size: 15px;
+}
+.planName{
+    margin-top: 5px;
+    
+}
+.tip{
+    margin-top: -60px;
+}
+.tipMob{
+    font-size: 11px;
+    margin-top: -35px;
+}
+.tip2{
+    margin-top:3px;
+    font-size: x-small;
+}
+.tip2Mob{
+    margin-top: -6px;
+    font-size: x-small;
+}
+.tip3{
+    font-size: x-small;
+}
+.tabs .tab a{
+    color:black !important;
+    background-color: rgb(238, 238, 238);
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+    color:#000;
+    background-color: #ffd4a9;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+    color: black !important;
+    background-color: #ffd4a9 !important;
+} /*Background and text color when a tab is active*/
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color:lightgrey !important;	
+}
+.tabs .indicator {
+    background-color:#000 !important;
+} /*Color of underline*/
+
+.titleText{
+    font-size: 15px;
+    hyphens: none;
+}
+.product-box{
+    display: flex;
+    justify-content: center;
+    margin-top: -18px;
+}
+.img{
+    width: 250px;
+}
+.searchBox{
+    display: none;
+}
+.divider{
+    width: 95%;
+    margin: auto;
+}
+.back-icon{
+    width: 24px;
+    padding-left: 5px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+.title{
+    padding-left: 10px;
+}
+.title-text{
+    
+    font-size: 18px;
+}
+.priceInfo{
+    display: none;
+}
+.store-logo{
+    width: 54px;
+}
+.price-section{
+    margin: 5px;
+    padding-right: 10px;
+    padding-left: 15px;
+    width: 160px;
+}
+.price-sectionMob{
+    margin: 5px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+.option-box{
+    width: 85%;
+}
+/* Tablets */
+@media only screen and (min-width: 600px) {
+nav{
+    display: block;
+}
+
+.header-mobile{
+    display: none;
+}
+}
+/* ipads */
+@media only screen and (min-width: 768px) {
+.titleText{
+    font-size: 16px;
+}
+.option-box{
+    margin-top: 15px;
+}
+.product-box{
+    width: 85%;
+    margin: auto;
+}
+.header-mobile{
+    display: none;
+}
+.img{
+    width: 270px;
+}
+.title{
+    font-size: 19px;
+    padding-left: 9px;
+}
+.comparison-box{
+    width: 77%;
+    margin: auto;
+}
+.priceInfo{
+    font-size: 16px;
+    margin-top: -20px;
+}
+.store-logo{
+    width: 75px;
+}
+.store-logo-box{
+    width: 80px;
+}
+.searchBox{
+    display: flex;
+}
+}
+/* larger ipads */
+@media only screen and (min-width: 1000px) {
+.header-mobile{
+    display: none;
+}
+.img{
+    width: 400px;
+}
+.product-box{
+    width: 80%;
+    margin: auto;
+}
+.title{
+    font-size: 22px;
+}
+.comparison-box{
+    width: 77%;
+    margin: auto;
+}
+.priceInfo{
+    font-size: 16px;
+}
+.searchBox{
+    width: 100%;
+}
+}
+/* larger monitors */
+@media only screen and (min-width: 1500px) {
+.header-mobile{
+    display: none;
+}
+.product-box{
+    margin: auto;
+    width: 68%;
+}
+.comparison-box{
+    width: 68%;
+    margin: auto;
+}
+.priceInfo{
+    font-size: 16px;
+}
+.divider{
+    width: 67%;
+    margin: 5px;
+}
+.product-box{
+    width: 68%;
+}
+.img{
+    width:500px;
+}
+
+}

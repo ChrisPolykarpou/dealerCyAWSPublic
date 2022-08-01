@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="../css/header.css">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW2Z9YF01P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BW2Z9YF01P');
+    </script>
+    <link rel="icon" href="https://dealercy-images.s3.eu-south-1.amazonaws.com/assets/logo.png">
+    <meta charset="utf-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo left"><img class="brand-logo homeBtnHome" src="https://dealercy-images.s3.eu-south-1.amazonaws.com/assets/logo.png" alt="dealer.com.cy"><p class="logoDealer hide-on-small-only">DealerCy</p></a>
+            <ul id="nav-mobile" class="right">
+            <li>
+                <div class="input-field navBar">
+                    <input class="autocomplete" type="search" id="autocomplete-input" required>
+                    <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                    <i id="clear-btn" class="material-icons">close</i>
+                </div>
+            </li>
+            <li><a id="login-btn" class="black-text">Sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- SIDE NAV -->
+    <ul id="slide-out1" class="sidenav">
+        <li><div class="user-view">
+        <img class="circle" src="<?php echo $_SESSION['user-profile'];?>">
+        <span class="white-text name"><?php echo $_SESSION['user-name'];?></span>
+        </div></li>
+        <li><a href="/frontend/user/viewFavourites.php"><i class="material-icons">favorite</i>Favourites</a></li>
+        <li><a href="#!"><i class="material-icons">star</i>Ratings</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="/backend/auth/login.php/logout"class="waves-effect"><i class="material-icons">logout</i>Logout</a></li>
+    </ul>
+</body>
+<script>
+    var names = "<%= JSON.stringify(names) %>"
+    var img = "<%= JSON.stringify(img) %>"
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="../scripts/home.js"></script>
+
+

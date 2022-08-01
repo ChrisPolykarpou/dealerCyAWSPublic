@@ -1,0 +1,145 @@
+<%- include('partials/header.ejs') %>
+<div class="preloader-wrapper active loader" id="loader">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+      <div class="circle"></div>
+    </div><div class="circle-clipper right">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+
+<head>
+<title> <%= productName %> | DealerCy</title>
+<!--  Essential META Tags -->
+<meta property="og:title" content="<%- productName %>">
+<meta property="og:type" content="product">
+<meta property="og:description" content="Find the best price of <%- productName %> in Cyprus"/>
+<meta property="og:image" content="https://www.dealercy.com<%- productImage %>">
+<meta property="og:url" content="https://www.dealercy.com<%- link %>">
+<meta name="twitter:card" content="summary_large_image">
+
+    <!-- Non-Essential, But Recommended -->
+<!-- <meta property="og:description" content="Offering tour packages for individuals or groups.">
+<meta property="og:site_name" content="European Travel, Inc.">
+<meta name="twitter:image:alt" content="Alt text for image"> -->
+
+<!--  Non-Essential, But Required for Analytics -->
+<meta property="fb:app_id" content="858050954895050" />
+<meta name="twitter:site" content="@website-username"> 
+</head>
+<link rel="stylesheet" href="css/product.css">
+    <body>
+    <div id="content" class="main hide">
+    <div class="row">
+        <div class="col s2 header-mobile">
+        <a id="backLink" class="waves-effect waves-circle waves-light">
+            <img class="back-icon" src="https://cdn-icons-png.flaticon.com/512/130/130882.png" alt="back-icon">
+        </a>
+        </div>
+        <div class="col s2 right header-mobile">
+        <a>
+          <img id="add2Favourites" class="back-icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="add-to-favourites">
+        </a>
+        </div>
+    </div>
+    <div class="product-box">
+        <img class="materialboxed img" data-caption="<%- productName %>" width="250" src="<%- productImage %>">
+        <div class="row hide-on-small-only">
+            <div class="title">
+                <h5 class="title-text">
+                    <%- productName %>
+                    <a>
+                        <img id="add2FavouritesL" class="back-icon center" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="add-to-favourites">
+                    </a>
+                    <a><i class="material-icons back-icon">share</i></a>
+                </h5>
+            </div>
+            <div class="options">
+                <!-- RENDER OPTIONS -->
+            </div>
+            <div class="row">
+                <div class="col s7">
+                <p><%- productDescription %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row header-mobile">
+        <div class="left title">
+        <h5 class="title-text"><%- productName %></h5>
+        </div>
+    </div>
+    <div class="optionsSmall">
+       <!-- RENDER OPTIONS small-screens -->
+    </div>
+    <table class="hide-on-small-only striped comparison-box">
+        <ul id="tabs-swipe-demo" class="hide-on-small-only tabs comparison-box">
+            <li class="tab col s3"><a class="active" href="#stores">Pay Outright</a></li>
+            <li id="plansTab" class="tab col s3 disabled"><a href="#plans">Mobile Plans</a></li>
+        </ul>
+        <thead>
+            <p class="hide-on-small-only comparison-box"><b>Disclaimer: </b>Information may not be completely accurate.</p>
+        </thead>
+        <tbody id="stores" class="store">
+            <!-- Render STORES -->
+        </tbody>
+        <tbody id="plans" class="plans">
+            <!-- Render STORES -->
+        </tbody>
+    </table>
+    <table class="hide-on-med-and-up striped comparison-box">
+        <thead>
+            <p class="hide-on-med-and-up comparison-box"><b>Disclaimer: </b>Information may not be completely accurate.</p>
+        </thead>
+        <ul id="tabs-swipe-demo1" class="tabs hide-on-med-and-up comparison-box">
+            <li class="tab col s3"><a class="active" href="#storesSmall">Pay Outright</a></li>
+            <li id="plansTabMob" class="tab col s3 disabled"><a href="#plansSmall">Mobile Plans</a></li>
+        </ul>
+        <tbody id="storesSmall" class="storeSmall">
+            <!-- Render STORES small-screens -->
+        </tbody>
+        <tbody id="plansSmall" class="plansSmall">
+            <!-- Render Plans small-screens -->
+        </tbody>
+    </table>
+    </div>
+    </body>
+</html>
+<script>
+    var productID = "<%- productID %>"
+    var productName = "<%- productName %>"
+    var productImage = "<%- productImage %>"
+    var productBrand = "<%- productBrand %>"
+    var productColor = "<%- productColor %>"
+    var productStorage = "<%- productStorage %>"
+    var productInches = "<%- productInches %>"
+    var productDescription = "<%- productDescription %>"
+
+    var storeProductName =  "<%- storeProductName %>"
+    var storePrice = "<%= storePrice %>"
+    var storeLink = "<%= storeLink %>"
+    var storeAvailability = "<%= storeAvailability %>"
+    var storeDelivery = "<%= storeDelivery %>"
+    var storeID = "<%= storeID %>"
+    var storesInfo = "<%= JSON.stringify(storesInfo) %>"
+
+    var planName = "<%= planName %>"
+    var planProduct = "<%= planProduct %>"
+    var planAvailability = "<%= planAvailability %>"
+    var planUpfront = "<%= planUpfront %>"
+    var planMonthly = "<%= planMonthly %>"
+    var planData = "<%= planData %>"
+    var planMinutes = "<%= planMinutes %>"
+    var planMessages = "<%= planMessages %>"
+    var planLink = "<%= planLink %>"
+    var planStoreID = "<%= planStoreID %>"
+
+    var optionsIDs = "<%= JSON.stringify(optionsIDs) %>"
+    var storageOptions = "<%= storageOptions %>"
+    var colorOptionImages = "<%= colorOptionImages %>"
+    var colorOptions = "<%= colorOptions %>"
+</script>
+<script src="./scripts/product.js"></script>

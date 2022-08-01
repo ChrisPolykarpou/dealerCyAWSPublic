@@ -1,0 +1,154 @@
+.navBar label {
+  -webkit-transform: translateY(0px) !important;
+  transform: translateY(0px) !important;
+  transform: translateX(20px) !important;
+}
+#clear-btn-mob{
+  -webkit-transform: translateY(0px) !important;
+  transform: translateY(10px) !important;
+}
+.homeBar{
+  height: 47px;
+} 
+.brand-logo{
+margin-top: 9px;
+margin-left: -28px;
+position: relative;
+}
+.logoDealer{
+  color: black;
+  margin-left: 75%;
+  font-size: 23px;
+  position: relative;
+  display: block;
+  margin-top: -8px;
+  font-weight:700;
+}
+nav{
+background-color: #ffffff;
+}
+.navBar{
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-color: rgb(226, 226, 226);
+}
+.homeBtnHome{
+  width: 40px;
+  margin: auto;
+  caret-color: transparent;
+}
+#login-btn{
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-color: rgb(226, 226, 226);
+  font-size: 16px;
+
+}
+/* ** */
+#search-btn-mob{
+  -webkit-transform: translateY(0px) !important;
+  transform: translateX(14px) !important;
+}
+#search-btn{
+  -webkit-transform: translateY(0px) !important;
+  transform: translateX(15px) !important;
+}
+.search-wrapper{
+  background-color: #ffd4a9;
+  height: 26%;
+  padding-top: 1px;
+}
+.searchBox{
+  margin-top: 15px;
+  height: 40%;
+}
+.innerSearchBox{
+  width: 100%;
+}
+.mobSearch{
+  width: 64%;
+}
+.searchTitle{
+  font-size: 18px;
+  font-weight: 600;
+}
+.homeBar{
+  background-color: white;
+}
+
+/* ** */
+
+@media only screen and (min-width: 767px) {
+  #clear-btn{
+    -webkit-transform: translateY(0px) !important;
+    transform: translateY(10px) !important;
+  }
+  .logoDealer{
+    color: black;
+    margin-left: 78%;
+    font-size: 25px;
+    position: relative;
+    display: block;
+    font-weight:700;
+  }
+  .mobSearch{
+    width: 45%;
+  }
+  .homeBtnHome{
+    width: 50px;
+  }
+  .search-wrapper{
+    background-color: #ffd4a9;
+    height: 25%;
+    padding-top: 6px;
+  }
+  .searchBox{
+    margin-top: 15px;
+    height: 50%;
+  }
+  .searchTitle{
+    font-size: 30px;
+  }
+
+}
+/* larger ipads */
+@media only screen and (min-width: 1000px) {
+  .search-wrapper{
+    background-color: #ffd4a9;
+    height: 45%;
+    padding-top: 6px;
+  }
+  .searchBox{
+    margin-top: 15px;
+    height: 50%;
+  }
+  .innerSearchBox{
+    width: 64%;
+    margin: auto;
+  }
+  .searchTitle{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .homeBar{
+    background-color: white;
+  }
+  .brand-logo{
+    margin-left: 10%;
+    margin-top: 4px;
+  }
+  .logoDealer{
+    color: black;
+    margin-left: 62%;
+    font-size: 24px;
+    position: relative;
+    display: block;
+    margin-top: -2px;
+    font-weight:700;
+  }
+
+}
+/* larger monitors */
+@media only screen and (min-width: 1920px) {
+
+}

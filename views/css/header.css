@@ -1,0 +1,77 @@
+.navBar label {
+    -webkit-transform: translateY(0px) !important;
+    transform: translateY(0px) !important;
+    transform: translateX(20px) !important;
+}
+.brand-logo{
+  margin-top: 6px;
+  margin-left: 7%;
+}
+nav{
+  background-color: #ffffff;
+}
+.navBar{
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-color: rgb(226, 226, 226);
+  width: 100%;
+}
+.homeBtnHome{
+    width: 47px;
+    margin: auto;
+    caret-color: transparent;
+}
+.logoDealer{
+  color: black;
+  margin-left: 74%;
+  font-size: 25px;
+  position: relative;
+  display: block;
+  margin-top: -5px;
+  font-weight:700;
+}
+  @media only screen and (min-width: 767px) {
+    .navBar{
+      width: 350px;
+    }
+    .brand-logo{
+      margin-left: 3%;
+      margin-top: 4px;
+    }
+    
+    .logoDealer{
+      color: black;
+      margin-left: 80%;
+      font-size: 24px;
+      position: relative;
+      display: block;
+      margin-top: -2px;
+      font-weight:700;
+    }
+
+    .homeBtnHome{
+      width: 50px;
+    }
+
+  }
+  /* larger ipads */
+  @media only screen and (min-width: 1000px) {
+    .brand-logo{
+      margin-left: 10%;
+      margin-top: 4px;
+    }
+    .logoDealer{
+      color: black;
+      margin-left: 62%;
+      font-size: 24px;
+      position: relative;
+      display: block;
+      margin-top: -2px;
+      font-weight:700;
+    }
+
+  }
+  /* larger monitors */
+  @media only screen and (min-width: 1920px) {
+
+  }

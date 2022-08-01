@@ -1,0 +1,47 @@
+<%- include('partials/header.ejs') %>
+<title> <%= search %> | DealerCy </title>
+<link rel="stylesheet" href="css/search.css">
+<html lang="en" dir="ltr">
+<div class="preloader-wrapper active loader" id="loader">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+      <div class="circle"></div>
+    </div><div class="circle-clipper right">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+<head>
+<!--  Essential META Tags -->
+<meta property="og:title" content="<%- search %>">
+<meta property="og:type" content="product">
+<meta property="og:description" content="Find the best Deals for <%- search %> in Cyprus"/>
+<meta property="og:url" content="https://www.dealercy.com<%- link %>">
+<meta property="og:image" content="https://www.cnet.com/a/img/resize/8fc01ed8aad4d3b8d1b108f3d97b87ee0f8144dc/2020/08/18/b7168aea-9f7e-47bb-9f31-4cb8ad92fbc7/lg-note-20-ultra-5g-iphone-11-se-google-pixel-4a-lg-velvet-6133.jpg?auto=webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="DealerCy">
+ <!-- Non-Essential, But Recommended -->
+
+<!--  Non-Essential, But Required for Analytics -->
+<!-- <meta name="twitter:site" content="@website-username"> -->
+<div id="content" class="main-box hide">
+    <div class="row">
+      <div class="col s12 resultCount">
+        <h7><%- resultsCount %> results for <b>"<%- search %>"</b></h7>
+      </div>
+      <div class="product"></div>
+    </div>
+  </div>
+</div>
+<script>
+    var id = '<%= id %>'
+    var name = '<%= name %>'
+    var description = '<%= JSON.stringify(description) %>'
+    var image = '<%= image %>'
+    var storeCount = '<%= storeCount %>'
+    var minPrice = '<%= minPrice %>'
+    var searchTitle = '<%- search %>';
+</script>
+<script src="./scripts/search.js"></script>

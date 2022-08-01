@@ -1,0 +1,28 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "DealerCY: price comparison app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "eta": "^1.12.3",
+    "express": "^4.18.1",
+    "express-openid-connect": "^2.7.2",
+    "express-session": "^1.17.2",
+    "moment": "^2.29.2",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "requirejs": "^2.3.6",
+    "smws": "^1.0.2"
+  }
+}

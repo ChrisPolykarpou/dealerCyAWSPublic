@@ -1,0 +1,117 @@
+.resultCount{
+    margin-top: 7px;
+}
+.card{
+    overflow: hidden;         /*prevent text from being shown outside the border */
+    text-overflow: ellipsis;  /*cut off text with an ellipsis*/
+}
+.loader {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+.back-icon{
+    width: 22px;
+}
+.main-box{
+    width: 99%;
+    margin: auto;
+}
+.box-info{
+    height: 52px;
+}
+.priceInfo{
+    margin-top: -23px;
+    margin-bottom: -7px;
+}
+.title{
+    font-size: 13px;
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: -2px;
+}
+.idBox{
+    display: none;
+}
+.descriptionBox{
+    display: none;
+}
+.colorBox{
+    display: none;
+}
+.img-box{
+    width: 132px;
+    margin: auto;
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+.img-box{
+    width: 140px;
+    margin: auto;
+}
+.descriptionBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    font-size: 15px;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+.box-info{
+    height: 114px;
+}
+}
+/* larger ipads */
+@media only screen and (min-width: 1000px) {
+.box-info{
+    height: 118px;
+}
+.main-box{
+    width: 75%;
+}
+.img-box{
+    width: 180px;
+    margin: auto;
+}
+.title{
+    font-size: 16px;
+    margin-top: -25px;
+    margin-bottom: -2px;
+}
+.idBox{
+    display: block;
+}
+}
+/* larger monitors */
+@media only screen and (min-width: 1500px) {
+.img-box{
+    width: 200px;
+}
+.title{
+    font-size: 18px;
+}
+.box-info{
+    height: 128px;
+}
+}
+/* larger monitors */
+@media only screen and (min-width: 1920px) {
+.main-box{
+    width: 69%;
+}
+.back-icon{
+    width: 21px;
+}
+.img-box{
+    width: 220px;
+}
+.title{
+    font-size: 21px;
+}
+.box-info{
+    height: 128px;
+}
+}
